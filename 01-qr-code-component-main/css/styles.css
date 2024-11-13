@@ -28,15 +28,15 @@ img {
 
 .main-background {
   background-color: var(--secundario);
-  width: 65rem;
-  height: 92rem;
-  margin: 20rem auto;
+  width: 32.1rem;
+  height: 50rem;
+  margin: 14.3rem auto;
   border-radius: 3rem;
 }
 
 .main-box__text {
   margin-top: 5rem;
-  font-size: 4.5rem;
+  font-size: 2.5rem;
   padding: 1rem;
   font-weight: bold;
   text-align: center;
@@ -46,15 +46,17 @@ img {
 }
 
 .main-box__teext {
-  font-size: 3.5rem;
+  font-size: 1.8rem;
   color: gray;
   text-align: center;
-  margin: 2rem 1rem;
-  line-height: 4rem;
+  margin: 1rem 0;
+  line-height: 2.5rem;
 }
 .main-box__image {
-  margin: 0 auto;
-  padding: 3rem;
+  margin: 1.6rem;
+  padding-top: 1.6rem;
+  width: 28.6rem;
+  height: 28.1rem;
   border-radius: 5rem;
 }
 
@@ -62,9 +64,9 @@ img {
 @media (max-width: 375px) {
   .main-background {
     display: flex;
-    width: 33rem;
-    height: 53rem;
-    margin: 10rem auto;
+    width: 32.1rem;
+    height: 50rem;
+    margin: 15rem auto;
     border-radius: 3rem;
   }
   .main-box__text {
