@@ -57,6 +57,11 @@
     margin-top: -1rem;
 }
 
+.main-container__head:hover {
+  color: var(--principal);
+  transition: btn 30s;
+}
+
 .main-container__text {
     font-size: 1.6rem;
     color:  hsl(0, 0%, 42%);
