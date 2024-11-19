@@ -34,9 +34,8 @@ img {
 }
 
 .main-card {
-    margin: 15rem auto;
+    margin: 17rem auto;
     width: 40rem;
-    padding: 1rem;
     border-radius: 2rem;
     background-color: hsl(0, 0%, 12%);
     text-align: center; 
