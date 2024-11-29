@@ -1,0 +1,164 @@
+:root {
+    --Dark: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    --very: hsl(212, 21%, 14%);
+    --grayish: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    
+    /*Typograph*/
+    --Principal : "Montserrat", serif;
+    --Secundaria : "Fraunces", serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    background-color: var(--Cream);
+    font-family: var(--Principal);
+}
+
+h1 {
+    font-family: var(--Principal);
+    letter-spacing: 0.2rem;
+}
+
+h2 {
+    font-family: var(--Secundaria);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 1rem;
+    /*display: block;*/
+}
+
+.container {  
+    max-width: 93%;
+    margin: 15.5rem auto;
+    background-color: var(--white);
+    border-radius: 3rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: unset;
+        max-width: 55%;
+    }
+    .card__image > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url(/images/image-product-desktop.jpg);
+        background-position: center center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem;
+    }
+} 
+
+.card__image--prices {
+    font-family: var(--Secundaria);
+
+}
+
+@media (min-width: 768px) {
+    .card__image--prices {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }  
+ } 
+.card__image--title {
+    font-size: 1.7rem;
+    font-weight: normal;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    color: gray;
+    letter-spacing: 0.3rem;
+}
+
+.card__image--subtitle {
+    font-size: 3.9rem;
+    margin: 1rem 2rem 1rem 2rem;
+    line-height: 1;
+    padding: 0.5rem;
+}
+
+.card__image__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 1rem 2rem 1rem 2rem;
+    color: gray;
+    padding: 0.5rem;
+}
+
+.card__image--price {
+    display: inline;
+    padding: 2rem;
+    font-size: 3.9rem;
+    font-weight: bold;
+    color: var(--Dark);
+}
+@media (min-width: 768px) {
+    .card__image--price {
+        display: block;
+        margin: -2.8rem 0.5rem;
+    }  
+} 
+
+.card__image--discount {
+    display: inline;
+    padding: 0.2rem;
+    font-size: 1.8rem;
+    color: gray;
+    text-decoration: line-through; 
+    /*We use line-through to add above the price fot the discount*/
+}
+@media (min-width: 768px) {
+    .card__image--discount {
+        margin: 1rem;
+     }  
+} 
+
+/* Button */
+.card__btn {
+    width: 100%;
+    padding: 2rem;
+}
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark);
+    border-radius: 1rem;
+    color: var(--white);
+    font-weight: bold;
+    gap: 2rem;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.btn img {
+    height: 3rem;
+}
