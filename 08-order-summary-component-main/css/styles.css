@@ -1,0 +1,170 @@
+:root {
+    /* Primary */
+    
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+
+    /* Typography */
+    --Principal : "Red Hat Display", sans-serif;
+
+}
+
+/* Globals */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: var(--PaleBlue);
+    font-family: var(--Principal);
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 10rem auto;
+    width: 90%;
+    padding: 2rem;
+}
+
+/* Utilities */
+.text-center {
+    text-align: center;
+}
+
+.btn {
+    width: 93%;
+    background-color: var(--BrightBlue);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+    border: none;
+
+}
+
+@media (min-width: 768px) {
+    .btn {
+        width: 91%;
+        margin: 2rem;
+        margin-bottom: 0;
+    } 
+     
+ } 
+
+.btn:hover {
+    background-color: hsl(245, 78%, 66%);
+    cursor: pointer;
+}
+
+/* Card */
+.card {
+    width: 30rem;
+    margin: 0 auto;
+    background-color: var(--Verypaleblue);
+    border-radius: 2rem;
+    
+}
+@media (min-width: 768px) {
+    .card {
+        width: 43.5rem;
+    } 
+     
+ } 
+.hero {
+    background-image: url(/images/illustration-hero.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 14rem;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 20rem;
+    }   
+} 
+
+.card__head {
+    font-weight: bold;
+    margin-top: 2.7rem;
+    color: var(--Darkblue);
+  
+}
+@media (min-width: 768px) {
+    .card__head {
+        margin: 3rem 0 0 0;
+        font-size: 3rem;
+    } 
+     
+ } 
+
+.card__text {
+    margin: 2rem;
+    color: var(--Desaturatedblue);
+    
+}
+@media (min-width: 768px) {
+    .card__text {
+        margin-top: 0;
+        padding: 2rem;
+    }   
+} 
+
+/* Music box */
+.card__music {
+    width: 88%;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--Verypaleblue);
+    border-radius: 2rem;
+}
+
+.card__music--price {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card__price {
+    color: var(--Desaturatedblue);
+
+}
+.card__change {
+    color: var(--BrightBlue);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card__bottom  {
+    color: var(--Desaturatedblue);
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+}
