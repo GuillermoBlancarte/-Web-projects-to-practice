@@ -127,7 +127,7 @@ img {
 
 @media (min-width: 768px) {
     .card {
-        height: 55rem;
+        height: 56rem;
     }
 
     .card:nth-child(1) {
@@ -179,6 +179,6 @@ img {
 }
 @media (min-width: 768px) {
     .card__text {
-        font-size: 1.9rem;
+        font-size: 1.85rem;
     } 
 } 
