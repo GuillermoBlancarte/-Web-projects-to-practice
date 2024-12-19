@@ -91,18 +91,18 @@ img {
 }
 
 .container {
-    max-width: 90%;
+    max-width: 120rem;
     margin: 10rem auto;
 }
+
+.grid {
+    margin: auto 2rem;
+}
+
 @media (min-width: 768px) {
     .grid {
-        width: 119rem;
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
-    }
-    
-    .container {
-        margin: 20rem auto;
     }
 }
 
