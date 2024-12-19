@@ -96,12 +96,13 @@ img {
 }
 @media (min-width: 768px) {
     .grid {
+        width: 119rem;
         display: grid;
         grid-template-columns: repeat(3 , 1fr);
     }
     
     .container {
-        margin: 25rem auto;
+        margin: 20rem auto;
     }
 }
 
