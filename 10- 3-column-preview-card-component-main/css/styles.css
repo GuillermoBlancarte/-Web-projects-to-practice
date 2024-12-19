@@ -48,25 +48,46 @@ img {
     width: 64%;
     border: none;
     border-radius: 4rem 4rem 4rem 4rem;
-    padding: 1.3rem;
+    padding: 1.5rem;
     margin-top: 1rem;
     font-family: var(--Principal);
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: var(--BrightOrange);
 }
+.btn:hover {
+    background-color: var(--BrightOrange);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
     .btn {
         margin-top: 6.1rem;
-
-    } 
-     
- } 
+        margin-bottom: 2rem;
+    }    
+} 
 
 .btn.green {
     color: var(--DarkCyan);
 }
+.btn.green:hover {
+    background-color: var(--DarkCyan);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+}
+
 .btn.darkgreen {
     color: var(--VeryDarkCyan);
+}
+.btn.darkgreen:hover {
+    background-color: var(--VeryDarkCyan);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+
 }
 
 .container {
