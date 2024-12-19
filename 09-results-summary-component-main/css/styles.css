@@ -1,0 +1,93 @@
+:root {
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+    /* Gradients */
+
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+
+    /* Typography */
+    --Principal: "Hanken Grotesk", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: var(--Principal);
+    background-color: var(--White);
+}
+
+h1,h2,h3 {
+    font-size: 5rem;
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.card {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--VioletBlue);
+    color: var(--White)
+}
+
+@media (min-width: 768px) {
+    .card {
+        margin: 20rem auto;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    } 
+     
+    .card__results {
+        border-radius: 2rem;
+    }
+ } 
+
+.card__head {
+    color: var(--Lightslateblue);
+    opacity: 70%;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2.5rem;
+}
+
+
+
+/* Summary */
+.card__summary {
+    background-color: var(--White);
+    color: black;
+}
+
+.card__summary > h2 {
+    color: black;
+    padding: 1rem;
+}
